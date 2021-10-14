@@ -10,7 +10,7 @@ class ConfigProviderTest extends TestCase
     /**
      * @covers \Riddlestone\Brokkr\GraphQL\ConfigProvider::__invoke
      */
-    public function test__invoke()
+    public function test__invoke(): void
     {
         $configProvider = new ConfigProvider();
         $this->assertEquals(
@@ -22,7 +22,7 @@ class ConfigProviderTest extends TestCase
     /**
      * @covers \Riddlestone\Brokkr\GraphQL\ConfigProvider::getDependencyConfig
      */
-    public function testGetDependencyConfig()
+    public function testGetDependencyConfig(): void
     {
         $configProvider = new ConfigProvider();
         $this->assertEquals(
@@ -34,7 +34,7 @@ class ConfigProviderTest extends TestCase
     /**
      * @covers \Riddlestone\Brokkr\GraphQL\ConfigProvider::getGraphQLFieldConfig
      */
-    public function testGetGraphQLFieldConfig()
+    public function testGetGraphQLFieldConfig(): void
     {
         $configProvider = new ConfigProvider();
         $this->assertEquals(
@@ -46,7 +46,7 @@ class ConfigProviderTest extends TestCase
     /**
      * @covers \Riddlestone\Brokkr\GraphQL\ConfigProvider::getGraphQLTypeConfig
      */
-    public function testGetGraphQLTypeConfig()
+    public function testGetGraphQLTypeConfig(): void
     {
         $configProvider = new ConfigProvider();
         $this->assertEquals(
@@ -58,7 +58,7 @@ class ConfigProviderTest extends TestCase
     /**
      * @covers \Riddlestone\Brokkr\GraphQL\ConfigProvider::getRouteConfig
      */
-    public function testGetRouteConfig()
+    public function testGetRouteConfig(): void
     {
         $configProvider = new ConfigProvider();
         $routeConfig = $configProvider->getRouteConfig();
