@@ -1,6 +1,6 @@
 <?php
 
-namespace Riddlestone\Brokkr\GraphQL;
+namespace Riddlestone\Brokkr\GraphQL\Types;
 
 use GraphQL\Type\Definition\Type;
 use Laminas\ServiceManager\AbstractPluginManager;

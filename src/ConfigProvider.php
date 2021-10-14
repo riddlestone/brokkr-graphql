@@ -5,6 +5,13 @@ namespace Riddlestone\Brokkr\GraphQL;
 use GraphQL\Type\Schema;
 use Laminas\Mvc\Middleware\PipeSpec;
 use Laminas\Router\Http\Placeholder;
+use Riddlestone\Brokkr\GraphQL\Fields\AbstractFieldFactory;
+use Riddlestone\Brokkr\GraphQL\Fields\GraphQLFieldManager;
+use Riddlestone\Brokkr\GraphQL\Fields\GraphQLFieldManagerFactory;
+use Riddlestone\Brokkr\GraphQL\Schema\GraphQLSchemaFactory;
+use Riddlestone\Brokkr\GraphQL\Types\AbstractScalarTypeFactory;
+use Riddlestone\Brokkr\GraphQL\Types\GraphQLTypeManager;
+use Riddlestone\Brokkr\GraphQL\Types\GraphQLTypeManagerFactory;
 
 class ConfigProvider
 {

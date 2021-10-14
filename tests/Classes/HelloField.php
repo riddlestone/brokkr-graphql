@@ -3,8 +3,8 @@
 namespace Riddlestone\Brokkr\GraphQL\Test\Classes;
 
 use GraphQL\Type\Definition\FieldDefinition;
-use Riddlestone\Brokkr\GraphQL\GraphQLTypeManager;
-use Riddlestone\Brokkr\GraphQL\NeedsTypeManagerInterface;
+use Riddlestone\Brokkr\GraphQL\Types\GraphQLTypeManager;
+use Riddlestone\Brokkr\GraphQL\Fields\NeedsTypeManagerInterface;
 
 class HelloField extends FieldDefinition implements NeedsTypeManagerInterface
 {

@@ -1,11 +1,12 @@
 <?php
 
-namespace Riddlestone\Brokkr\GraphQL;
+namespace Riddlestone\Brokkr\GraphQL\Schema;
 
 use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Schema;
 use Laminas\ServiceManager\Factory\FactoryInterface;
 use Psr\Container\ContainerInterface;
+use Riddlestone\Brokkr\GraphQL\Fields\GraphQLFieldManager;
 
 class GraphQLSchemaFactory implements FactoryInterface
 {

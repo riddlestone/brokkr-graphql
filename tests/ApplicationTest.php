@@ -7,10 +7,13 @@ use GraphQL\Type\Definition\StringType;
 use GraphQL\Type\Schema;
 use Laminas\Http\Request;
 use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
-use Riddlestone\Brokkr\GraphQL\GraphQLFieldManager;
-use Riddlestone\Brokkr\GraphQL\GraphQLTypeManager;
+use Riddlestone\Brokkr\GraphQL\Fields\GraphQLFieldManager;
+use Riddlestone\Brokkr\GraphQL\Types\GraphQLTypeManager;
 use Riddlestone\Brokkr\GraphQL\Test\Classes\HelloField;
 
+/**
+ * @coversNothing
+ */
 class ApplicationTest extends AbstractHttpControllerTestCase
 {
     protected function setUp(): void

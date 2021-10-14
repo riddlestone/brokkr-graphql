@@ -1,10 +1,11 @@
 <?php
 
-namespace Riddlestone\Brokkr\GraphQL;
+namespace Riddlestone\Brokkr\GraphQL\Fields;
 
 use GraphQL\Type\Definition\FieldDefinition;
 use Laminas\ServiceManager\Factory\AbstractFactoryInterface;
 use Psr\Container\ContainerInterface;
+use Riddlestone\Brokkr\GraphQL\Types\GraphQLTypeManager;
 
 class AbstractFieldFactory implements AbstractFactoryInterface
 {

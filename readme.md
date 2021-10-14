@@ -43,7 +43,7 @@ Alternatively you can deal with the manager directly:
 
 ```php
 use Laminas\ServiceManager\ServiceManager;
-use Riddlestone\Brokkr\GraphQL\GraphQLTypeManager;
+use Riddlestone\Brokkr\GraphQL\Types\GraphQLTypeManager;
 
 /** @var ServiceManager $serviceManager */
 
@@ -71,7 +71,7 @@ return [
 
 ```php
 use Laminas\ServiceManager\ServiceManager;
-use Riddlestone\Brokkr\GraphQL\GraphQLFieldManager;
+use Riddlestone\Brokkr\GraphQL\Fields\GraphQLFieldManager;
 
 /** @var ServiceManager $serviceManager */
 

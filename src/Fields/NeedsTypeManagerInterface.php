@@ -1,6 +1,8 @@
 <?php
 
-namespace Riddlestone\Brokkr\GraphQL;
+namespace Riddlestone\Brokkr\GraphQL\Fields;
+
+use Riddlestone\Brokkr\GraphQL\Types\GraphQLTypeManager;
 
 interface NeedsTypeManagerInterface
 {

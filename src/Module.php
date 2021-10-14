@@ -4,6 +4,8 @@ namespace Riddlestone\Brokkr\GraphQL;
 
 use Laminas\ModuleManager\Listener\ServiceListener;
 use Laminas\ModuleManager\ModuleManager;
+use Riddlestone\Brokkr\GraphQL\Fields\GraphQLFieldProviderInterface;
+use Riddlestone\Brokkr\GraphQL\Types\GraphQLTypeProviderInterface;
 
 class Module
 {
