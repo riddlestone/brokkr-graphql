@@ -1,0 +1,10 @@
+version: "3"
+services:
+  php:
+    image: thecodingmachine/php:7.4-v4-cli
+    environment:
+      PHP_EXTENSION_XDEBUG: "1"
+      XDEBUG_MODE: "debug"
+    volumes:
+      - ".:/app"
+    working_dir: "/app"

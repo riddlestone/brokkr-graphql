@@ -1,0 +1,40 @@
+{
+  "name": "riddlestone/brokkr-graphql",
+  "description": "Laminas-based GraphQL integration",
+  "minimum-stability": "stable",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Andrew Riddlestone",
+      "email": "andrew.riddlestone@gmail.com"
+    }
+  ],
+  "extra": {
+    "laminas": {
+      "component": "Riddlestone\\Brokkr\\GraphQL",
+      "config-provider": "Riddlestone\\Brokkr\\GraphQL\\ConfigProvider"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "require": {
+    "php": "7.4.*",
+    "laminas/laminas-mvc-middleware": "^2.0",
+    "laminas/laminas-router": "^3.4",
+    "webonyx/graphql-php": "^14.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Riddlestone\\Brokkr\\GraphQL\\": "src/"
+    }
+  },
+  "require-dev": {
+    "laminas/laminas-test": "^3.5"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Riddlestone\\Brokkr\\GraphQL\\Test\\": "tests/"
+    }
+  }
+}
