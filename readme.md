@@ -87,12 +87,15 @@ need to be registered for use as root query fields.
 In order for fields to be available as a root element in a query, they need to
 be registered as query fields with the field manager through configuration.
 
+You can optionally set the field name using the array key. This can be useful
+when reusing configurable classes to represent more than one field.
+
 ```php
 # module config
 return [
     'graphql_fields' => [
         'query_fields' => [
-            'My\\FieldClass',
+            'field_classes' => 'My\\FieldClass',
         ],
     ],
 ];

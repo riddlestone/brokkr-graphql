@@ -34,6 +34,13 @@ class GraphQLFieldManager extends AbstractPluginManager
      */
     public function getQueryFields(): array
     {
-        return array_map([$this, 'get'], $this->queryFields);
+        $fields = [];
+        foreach ($this->queryFields as $key => $value) {
+            $options = is_string($key)
+                ? ['name' => $key]
+                : [];
+            $fields[] = $this->get($value, $options);
+        }
+        return $fields;
     }
 }
