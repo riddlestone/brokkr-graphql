@@ -16,7 +16,10 @@
     }
   },
   "scripts": {
-    "test": "phpunit"
+    "test": "phpunit",
+    "quality-checks": [
+      "psalm"
+    ]
   },
   "require": {
     "php": "7.4.*",
@@ -30,11 +33,17 @@
     }
   },
   "require-dev": {
-    "laminas/laminas-test": "^3.5"
+    "laminas/laminas-test": "^3.5",
+    "vimeo/psalm": "^4.21"
   },
   "autoload-dev": {
     "psr-4": {
       "Riddlestone\\Brokkr\\GraphQL\\Test\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true
     }
   }
 }
