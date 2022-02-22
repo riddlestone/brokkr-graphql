@@ -12,7 +12,9 @@ class GraphQLServer extends StandardServer implements RequestHandlerInterface
 {
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        $response = new Response();
-        return $this->processPsrRequest($request, $response, $response->getBody());
+        $psrResponse = new Response();
+        $response = $this->processPsrRequest($request, $psrResponse, $psrResponse->getBody());
+        assert($response instanceof ResponseInterface);
+        return $response;
     }
 }

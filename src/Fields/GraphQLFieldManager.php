@@ -5,6 +5,9 @@ namespace Riddlestone\Brokkr\GraphQL\Fields;
 use GraphQL\Type\Definition\FieldDefinition;
 use Laminas\ServiceManager\AbstractPluginManager;
 
+/**
+ * @method FieldDefinition get($name, ?array $options = null)
+ */
 class GraphQLFieldManager extends AbstractPluginManager
 {
     protected $instanceOf = FieldDefinition::class;

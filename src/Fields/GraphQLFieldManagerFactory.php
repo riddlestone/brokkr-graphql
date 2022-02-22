@@ -4,14 +4,21 @@ namespace Riddlestone\Brokkr\GraphQL\Fields;
 
 use Laminas\ServiceManager\Config;
 use Laminas\ServiceManager\Factory\FactoryInterface;
+use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;
+use Psr\Container\NotFoundExceptionInterface;
 
 class GraphQLFieldManagerFactory implements FactoryInterface
 {
     /**
      * {@inheritDoc}
      *
+     * @param ContainerInterface $container
+     * @param string $requestedName
+     * @param array|null $options
      * @return GraphQLFieldManager
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null): GraphQLFieldManager
     {
